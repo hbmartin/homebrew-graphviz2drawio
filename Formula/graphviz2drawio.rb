@@ -3,10 +3,10 @@ class Graphviz2drawio < Formula
 
   desc "Convert graphviz (dot) files into draw.io / lucid (mxGraph) format"
 
-  version "0.4.0"
-  sha256 "3ff234777044a856cbac2006538c007b0d92de2aab1b2380baab50a74c60fe50"
+  version "0.5.0"
+  sha256 "0bc8c1fec4b8e22e96f6991f44eba95250242aa9c748057d6f5d114bd90f3809"
 
-  url "https://files.pythonhosted.org/packages/90/dd/6c2eb3c1c1b7892a1e69de9e695dc86148ddbdacaeb985cb520db9bdbc11/graphviz2drawio-0.4.0.tar.gz"
+  url "https://files.pythonhosted.org/packages/7e/ab/9db7e2d8172eba962fd9978a481933bab6c592868def468aa7c045ad05a2/graphviz2drawio-0.5.0.tar.gz"
   homepage "https://github.com/hbmartin/graphviz2drawio/"
   license "GPL-3.0"
 
