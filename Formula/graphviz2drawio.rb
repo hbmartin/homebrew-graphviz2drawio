@@ -2,13 +2,12 @@ class Graphviz2drawio < Formula
   include Language::Python::Virtualenv
 
   desc "Convert graphviz (dot) files into draw.io / lucid (mxGraph) format"
-
-  version "0.5.0"
-  sha256 "0bc8c1fec4b8e22e96f6991f44eba95250242aa9c748057d6f5d114bd90f3809"
+  homepage "https://github.com/hbmartin/graphviz2drawio/"
 
   url "https://files.pythonhosted.org/packages/7e/ab/9db7e2d8172eba962fd9978a481933bab6c592868def468aa7c045ad05a2/graphviz2drawio-0.5.0.tar.gz"
-  homepage "https://github.com/hbmartin/graphviz2drawio/"
-  license "GPL-3.0"
+  sha256 "0bc8c1fec4b8e22e96f6991f44eba95250242aa9c748057d6f5d114bd90f3809"
+
+  license "GPL-3.0-or-later"
 
   depends_on "python3"
   depends_on "graphviz"
@@ -34,6 +33,6 @@ class Graphviz2drawio < Formula
   end
 
   test do
-    false
+    assert_match "mxCell id=\"node1\"", shell_output("echo 'digraph { a -> b }' | #{bin}/graphviz2drawio")
   end
 end
